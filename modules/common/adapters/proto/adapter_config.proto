@@ -47,6 +47,9 @@ message AdapterConfig {
     RELATIVE_MAP = 40;
     NAVIGATION = 41;
     ULTRASONIC_RADAR = 42;
+    VELODYNE_PACKETS = 43;                                                                                                                                         
+    VELODYNE_POINTCLOUD = 44;
+    VELODYNE_COMPENSATED_POINTCLOUD = 45;
   }
   enum Mode {
     RECEIVE_ONLY = 0;

@@ -177,6 +177,15 @@ void AdapterManager::Init(const AdapterManagerConfig &configs) {
       case AdapterConfig::NAVIGATION:
         EnableNavigation(FLAGS_navigation_topic, config);
         break;
+      case AdapterConfig::VELODYNE_PACKETS:
+        EnableVelodynePackets(FLAGS_velodyne_packets_topic, config);
+        break;
+      case AdapterConfig::VELODYNE_POINTCLOUD:
+        EnableVelodynePointCloud(FLAGS_velodyne_pointcloud_topic, config);
+        break;
+      case AdapterConfig::VELODYNE_COMPENSATED_POINTCLOUD:
+        EnableVelodyneCompensatedPointCloud(FLAGS_velodyne_compensated_pointcloud_topic, config);
+        break;
       default:
         AERROR << "Unknown adapter config type!";
         break;

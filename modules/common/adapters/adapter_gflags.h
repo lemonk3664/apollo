@@ -60,5 +60,9 @@ DECLARE_string(localization_sins_pva_topic);
 DECLARE_string(localization_msf_status);
 DECLARE_string(relative_map_topic);
 DECLARE_string(navigation_topic);
+DECLARE_string(navigation_topic);
+DECLARE_string(velodyne_packets_topic);
+DECLARE_string(velodyne_pointcloud_topic);
+DECLARE_string(velodyne_compensated_pointcloud_topic);
 
 #endif  // MODULES_COMMON_ADAPTERS_ADAPTER_GFLAGS_H_

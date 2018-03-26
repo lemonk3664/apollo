@@ -49,6 +49,7 @@
 #include "sensor_msgs/CompressedImage.h"
 #include "sensor_msgs/Image.h"
 #include "sensor_msgs/PointCloud2.h"
+#include "velodyne_msgs/VelodyneScanUnified.h"
 
 /**
  * @file message_adapters.h
@@ -104,6 +105,9 @@ using LocalizationMsfStatusAdapter =
     Adapter<apollo::localization::LocalizationStatus>;
 using RelativeMapAdapter = Adapter<apollo::relative_map::MapMsg>;
 using NavigationAdapter = Adapter<apollo::relative_map::NavigationInfo>;
+using VelodynePacketsAdapter = Adapter<velodyne_msgs::VelodyneScanUnified>;
+using VelodynePointCloudAdapter = Adapter<::sensor_msgs::PointCloud2>;
+using VelodyneCompensatedPointCloudAdapter = Adapter<::sensor_msgs::PointCloud2>;
 
 }  // namespace adapter
 }  // namespace common

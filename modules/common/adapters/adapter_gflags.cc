@@ -90,3 +90,12 @@ DEFINE_string(localization_msf_status, "/apollo/localization/msf_status",
               "msf localization status");
 DEFINE_string(relative_map_topic, "/apollo/relative_map", "relative map");
 DEFINE_string(navigation_topic, "/apollo/navigation", "navigation");
+DEFINE_string(velodyne_packets_topic,
+              "/apollo/sensor/velodyne64/VelodyneScanUnified",
+              "velodyne packets topic");
+DEFINE_string(velodyne_pointcloud_topic,
+              "/apollo/sensor/velodyne64/PointCloud2",
+              "velodyne pointcloud topic");
+DEFINE_string(velodyne_compensated_pointcloud_topic,
+              "/apollo/sensor/velodyne64/compensator/PointCloud2",
+              "velodyne compensated pointcloud topic");

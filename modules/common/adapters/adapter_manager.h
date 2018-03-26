@@ -281,6 +281,9 @@ class AdapterManager {
   REGISTER_ADAPTER(DriveEvent);
   REGISTER_ADAPTER(RelativeMap);
   REGISTER_ADAPTER(Navigation);
+  REGISTER_ADAPTER(VelodynePackets);
+  REGISTER_ADAPTER(VelodynePointCloud);
+  REGISTER_ADAPTER(VelodyneCompensatedPointCloud);
 
   DECLARE_SINGLETON(AdapterManager);
 };

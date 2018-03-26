@@ -384,6 +384,10 @@ class Adapter : public AdapterBase {
     return false;
   }
   bool FeedFile(const std::string& message_file,
+                IdentifierType<velodyne_msgs::VelodyneScanUnified>) {
+    return false;
+  }
+  bool FeedFile(const std::string& message_file,
                 IdentifierType<::sensor_msgs::CompressedImage>) {
     return false;
   }

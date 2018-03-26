@@ -1,0 +1,18 @@
+VelodyneConf {
+    node_name: "/apollo/sensor/velodyne"
+    velodyne64_calibration_online: true
+    velodyne64_calibration_file: "modules/drivers/velodyne/params/64E_S3_calibration_example.yaml"
+    extrinsics_velodyne64: "modules/drivers/velodyne/params/velodyne64_novatel_extrinsics_example.yaml"
+    velodyne64_frame_id: "velodyne64"
+    frame_id: "velodyne"
+    organized: false
+    min_range: 0.9
+    max_range: 70.0
+    rpm: 600.00
+    model: "64E_S3D_STRONGEST"
+    tf_query_timeout: 0.1
+    firing_data_port: 2368
+    positioning_data_port: 8308
+    compensator_child_frame_id: "velodyne64"
+    view_direction: 0.0
+}

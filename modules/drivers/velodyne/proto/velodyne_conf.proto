@@ -1,0 +1,23 @@
+syntax = "proto2";
+
+package apollo.drivers.velodyne;
+
+message VelodyneConf {
+    required bytes node_name = 1;
+    optional bool velodyne64_calibration_online = 2 [default = true];
+    optional bytes velodyne64_calibration_file = 3;
+    optional bytes extrinsics_velodyne64 = 4;
+    optional bytes velodyne64_frame_id = 5;
+    optional bool organized = 6;
+    optional double min_range = 7;
+    optional double max_range = 8;
+    optional double rpm = 9;
+    required bytes model = 10;
+    optional double tf_query_timeout = 11;
+    required int32 firing_data_port = 12;
+    required int32 positioning_data_port = 13;
+    required bytes frame_id = 14;
+    optional bytes compensator_child_frame_id = 15;
+    optional double view_direction = 16;
+    optional double view_width = 17;
+}
